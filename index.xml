@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ren z777</title><link>https://renz7.github.io/</link><description>Recent content on ren z777</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 29 Apr 2021 13:52:04 +0800</lastBuildDate><atom:link href="https://renz7.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Readme</title><link>https://renz7.github.io/readme/</link><pubDate>Thu, 29 Apr 2021 13:55:56 +0800</pubDate><guid>https://renz7.github.io/readme/</guid><description>ReadMe</description></item><item><title>About Me</title><link>https://renz7.github.io/post/first/</link><pubDate>Thu, 29 Apr 2021 13:52:04 +0800</pubDate><guid>https://renz7.github.io/post/first/</guid><description> github: https://github.com/renz7</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ren z777</title>
+    <link>https://renz7.github.io/</link>
+    <description>Recent content on ren z777</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 29 Apr 2021 13:52:04 +0800</lastBuildDate><atom:link href="https://renz7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Readme</title>
+      <link>https://renz7.github.io/readme/</link>
+      <pubDate>Thu, 29 Apr 2021 13:55:56 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/readme/</guid>
+      <description>ReadMe</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://renz7.github.io/post/first/</link>
+      <pubDate>Thu, 29 Apr 2021 13:52:04 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/post/first/</guid>
+      <description> github: https://github.com/renz7
+ </description>
+    </item>
+    
+  </channel>
+</rss>
