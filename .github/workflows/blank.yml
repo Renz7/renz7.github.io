@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: HUGO
 
 # Controls when the action will run. 
 on:
@@ -36,3 +36,8 @@ jobs:
           hugo-version: latest
           # Download (if necessary) and use Hugo extended version. Example: true
           extended: true
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

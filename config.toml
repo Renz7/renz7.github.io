@@ -1,0 +1,30 @@
+baseURL = "https://renz7.github.io/"
+languageCode = "zh-cn"
+title = "ren z777"
+theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = "Renz7"
+  description = "Care will kill the cat."
+  github = "Renz7"
+  email = "Renz7@outloo.com"
+  url = "https://renz7.github.io/"
+  keywords = "blog, code man,python,golang"
+  rss = true
+  lastmod = true
+  favicon = "/images/github.png"
+  location = "China"
+
+  [[params.links]]
+    title = "Theme"
+    href = "https://github.com/meik2333"
+  [[params.links]]
+    title = "Link2"
+    href = "https://meik2333.com"
+    icon = "https://meik2333.com/images/avatar.png"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
