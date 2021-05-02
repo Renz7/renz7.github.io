@@ -18,7 +18,7 @@ enableGitInfo = true
   keywords = "blog, code man,python,golang"
   rss = false
   lastmod = true
-  favicon = "/images/avator.png"
+  favicon = "/images/avatar.png"
   location = "Shenzhen,China"
 
   [[params.links]]
