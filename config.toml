@@ -1,6 +1,6 @@
 baseURL = "https://renz7.github.io/"
 languageCode = "zh-cn"
-title = "ren z777"
+title = "Ren777's blog."
 theme = "github-style"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
@@ -9,12 +9,13 @@ pygmentsUseClasses = true
   author = "Renz7"
   description = "Care will kill the cat."
   github = "Renz7"
+  stackoverflow="renz7"
   email = "Renz7@outloo.com"
   url = "https://renz7.github.io/"
   keywords = "blog, code man,python,golang"
-  rss = true
+  rss = false
   lastmod = true
-  favicon = "/images/github.png"
+  favicon = "/images/avator.png"
   location = "Shenzhen,China"
 
   [[params.links]]
