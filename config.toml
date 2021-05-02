@@ -6,6 +6,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 enableInlineShortcodes = true
 enableEmoji = true
+enableGitInfo = true
 
 [params]
   author = "Renz7"
