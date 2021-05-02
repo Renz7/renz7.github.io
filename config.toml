@@ -18,12 +18,9 @@ pygmentsUseClasses = true
   location = "China"
 
   [[params.links]]
-    title = "Theme"
+    title = "Theme From"
     href = "https://github.com/meik2333"
-  [[params.links]]
-    title = "Link2"
-    href = "https://meik2333.com"
-    icon = "https://meik2333.com/images/avatar.png"
+
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
