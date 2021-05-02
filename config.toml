@@ -4,6 +4,8 @@ title = "Ren777's blog."
 theme = "github-style"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+enableInlineShortcodes = true
+enableEmoji = true
 
 [params]
   author = "Renz7"
