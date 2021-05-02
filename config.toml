@@ -15,11 +15,12 @@ pygmentsUseClasses = true
   rss = true
   lastmod = true
   favicon = "/images/github.png"
-  location = "China"
+  location = "Shenzhen,China"
 
   [[params.links]]
     title = "Theme From"
     href = "https://github.com/meik2333"
+    icon = "https://meik2333.com/images/avatar.png"
 
 
 [frontmatter]
