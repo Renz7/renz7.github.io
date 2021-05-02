@@ -14,7 +14,7 @@ Backend, spider, Container
 # :e-mail: Find me 
 - Email: <renz_7@outlook.com>
 - Github: <https://github.com/renz7>
-- Blog： [renz7/github.io](htt://renz7/github.io)
+- Blog： [github.io](htt://renz7.github.io)
 
 # :factory: Site by
 - [Hugo](https://gohugo.io/)
