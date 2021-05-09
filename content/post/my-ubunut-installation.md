@@ -2,6 +2,7 @@
 title: "My Ubunut Installation"
 date: 2021-05-02T20:20:57+08:00
 draft: true
+tags: ["linux"]
 ---
 ## 我的Ubuntu安装配置
 

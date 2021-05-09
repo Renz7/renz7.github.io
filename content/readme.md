@@ -5,18 +5,18 @@ draft: false
 ---
 
 # :computer: Working On
-Backend, spider, Container
+Backend, spider, Container, Graph
 - Python(main)
 - Go
 - Java
 - Rust(fresh)
 
-# :e-mail: Find me 
+# :e-mail: Contact me 
 - Email: <renz_7@outlook.com>
 - Github: <https://github.com/renz7>
 - Blog： [github.io](htt://renz7.github.io)
 
-# :factory: Site by
+# :factory: Powered by
 - [Hugo](https://gohugo.io/)
 - [Github Pages](https://docs.github.com/en/pages)
 - [Github Actions](https://docs.github.com/en/actions)
