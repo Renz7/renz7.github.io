@@ -14,7 +14,7 @@ Backend, spider, Container, Graph
 # :e-mail: Contact me 
 - Email: <renz_7@outlook.com>
 - Github: <https://github.com/renz7>
-- Blog： [github.io](htt://renz7.github.io)
+- Blog： [github.io](https://renz7.github.io)
 
 # :factory: Powered by
 - [Hugo](https://gohugo.io/)
