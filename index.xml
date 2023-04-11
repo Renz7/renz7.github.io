@@ -6,7 +6,74 @@
     <description>Recent content on Ren777&#39;s blog.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Apr 2021 13:52:04 +0800</lastBuildDate><atom:link href="https://renz7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 18:00:53 +0800</lastBuildDate><atom:link href="https://renz7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>https://renz7.github.io/post/go/go/</link>
+      <pubDate>Mon, 10 Apr 2023 18:00:53 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/post/go/go/</guid>
+      <description>GMP M: machine,对应系统核心线程 P: processor, 绑定m和G G: gonrutine go协程
+go scheduler 发生调度的时机
+go 新建goroutine GC GC会新建一个goroutine 系统调用 系统调用时 会堵塞M,所有该goroutine会被调度走 同步访问 atomic,mutex,chanal操作是goroutine堵塞. 工作窃取 当P2的本地队列没有G,优先从全局的G队列拿,如果还没有就会
+CSP Do not communicate by sharing memory; instead, share memory by communicating.
+CSP 全称是 “Communicating Sequential Processes”，这也是 Tony Hoare 在 1978 年发表在 ACM 的一篇论文。论文里指出一门编程语言应该重视 input 和 output 的原语，尤其是并发编程的代码。
+原则: 尽量使用 channel；把 goroutine 当作免费的资源，随便用。
+link CSP
+GC 两类GC
+追踪式GC 标记清楚: 标记整理: 解决内存碎片的问题 增量式: 将标记与清扫的过程分批执行，每次执行很小的部分，从而增量的推进垃圾回收，达到近似实时、几乎无停顿的目的 增量整理 分代 引用计数: 根据对象自己的引用计数俩回收,引用为0立即回收 不整理,并发的 三色标记清除算法</description>
+    </item>
+    
+    <item>
+      <title>Flask</title>
+      <link>https://renz7.github.io/post/python/flask/</link>
+      <pubDate>Mon, 10 Apr 2023 17:37:08 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/post/python/flask/</guid>
+      <description>what is wsgi Web服务器网关接口 (Web Server Gateway Interface).Web服务器网关接口是为Python语言定义的Web服务器和Web应用程序或框架之间的一种简单而通用的接口 app.py
+def wsgi_app(self, environ: dict, start_response: t.Callable) -&amp;gt; t.Any: &amp;#34;&amp;#34;&amp;#34;The actual WSGI application. This is not implemented in :meth:`__call__` so that middlewares can be applied without losing a reference to the app object. Instead of doing this:: app = MyMiddleware(app) It&amp;#39;s a better idea to do this instead:: app.wsgi_app = MyMiddleware(app.wsgi_app) Then you still have the original application object around and can continue to call methods on it.</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://renz7.github.io/post/python/python/</link>
+      <pubDate>Mon, 10 Apr 2023 17:01:47 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/post/python/python/</guid>
+      <description>pyton basic</description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>https://renz7.github.io/post/redis/</link>
+      <pubDate>Mon, 10 Apr 2023 16:29:33 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/post/redis/</guid>
+      <description>redis interview</description>
+    </item>
+    
+    <item>
+      <title>Rabbitmq</title>
+      <link>https://renz7.github.io/post/mq/rabbitmq/</link>
+      <pubDate>Fri, 07 Apr 2023 15:43:09 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/post/mq/rabbitmq/</guid>
+      <description>rabbitmq interview</description>
+    </item>
+    
+    <item>
+      <title>Collections</title>
+      <link>https://renz7.github.io/post/java/collections/</link>
+      <pubDate>Sun, 02 Apr 2023 14:40:46 +0800</pubDate>
+      
+      <guid>https://renz7.github.io/post/java/collections/</guid>
+      <description>java collections ArrayList
+LinkedList
+Vector
+Map HashMap hash冲突解决方案: 拉链法,大于8之后进化为红黑树 LinkedHashMap TreeMap
+基于红黑树,对key进行排序 </description>
+    </item>
+    
     <item>
       <title>Read Me</title>
       <link>https://renz7.github.io/readme/</link>
@@ -14,18 +81,7 @@
       
       <guid>https://renz7.github.io/readme/</guid>
       <description>💻 Working On Backend, spider, Container, Graph
- Python(main) Go Java Rust(fresh)  📧 Contact me  Email: renz_7@outlook.com Github: https://github.com/renz7 Blog： github.io  🏭 Powered by  Hugo Github Pages Github Actions github-style  </description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://renz7.github.io/post/first/</link>
-      <pubDate>Thu, 29 Apr 2021 13:52:04 +0800</pubDate>
-      
-      <guid>https://renz7.github.io/post/first/</guid>
-      <description> 积攒能量升级中
-github: https://github.com/renz7
- </description>
+Python(main) Go Java Rust(fresh) 📧 Contact me Email: renz_7@outlook.com Github: https://github.com/renz7 Blog： github.io 🏭 Powered by Hugo Github Pages Github Actions github-style </description>
     </item>
     
   </channel>
