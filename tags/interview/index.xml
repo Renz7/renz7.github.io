@@ -6,12 +6,12 @@
     <description>Recent content in interview on Ren777&#39;s blog.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 Apr 2023 18:00:53 +0800</lastBuildDate><atom:link href="https://renz7.github.io/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 18:00:53 +0800</lastBuildDate>
+    <atom:link href="https://renz7.github.io/tags/interview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go</title>
       <link>https://renz7.github.io/post/go/go/</link>
       <pubDate>Mon, 10 Apr 2023 18:00:53 +0800</pubDate>
-      
       <guid>https://renz7.github.io/post/go/go/</guid>
       <description>GMP M: machine,对应系统核心线程 P: processor, 绑定m和G G: gonrutine go协程
 go scheduler 发生调度的时机
@@ -23,15 +23,12 @@ link CSP
 GC 两类GC
 追踪式GC 标记清楚: 标记整理: 解决内存碎片的问题 增量式: 将标记与清扫的过程分批执行，每次执行很小的部分，从而增量的推进垃圾回收，达到近似实时、几乎无停顿的目的 增量整理 分代 引用计数: 根据对象自己的引用计数俩回收,引用为0立即回收 不整理,并发的 三色标记清除算法</description>
     </item>
-    
     <item>
       <title>Python</title>
       <link>https://renz7.github.io/post/python/python/</link>
       <pubDate>Mon, 10 Apr 2023 17:01:47 +0800</pubDate>
-      
       <guid>https://renz7.github.io/post/python/python/</guid>
       <description>pyton basic</description>
     </item>
-    
   </channel>
 </rss>
