@@ -13,11 +13,7 @@
       <link>https://renz7.github.io/post/java/collections/</link>
       <pubDate>Sun, 02 Apr 2023 14:40:46 +0800</pubDate>
       <guid>https://renz7.github.io/post/java/collections/</guid>
-      <description>java collections ArrayList
-LinkedList
-Vector
-Map HashMap hash冲突解决方案: 拉链法,大于8之后进化为红黑树 LinkedHashMap TreeMap
-基于红黑树,对key进行排序 </description>
+      <description>java collections ArrayList&#xA;LinkedList&#xA;Vector&#xA;Map HashMap hash冲突解决方案: 拉链法,大于8之后进化为红黑树 LinkedHashMap TreeMap&#xA;基于红黑树,对key进行排序 </description>
     </item>
   </channel>
 </rss>

@@ -13,15 +13,7 @@
       <link>https://renz7.github.io/post/go/go/</link>
       <pubDate>Mon, 10 Apr 2023 18:00:53 +0800</pubDate>
       <guid>https://renz7.github.io/post/go/go/</guid>
-      <description>GMP M: machine,对应系统核心线程 P: processor, 绑定m和G G: gonrutine go协程
-go scheduler 发生调度的时机
-go 新建goroutine GC GC会新建一个goroutine 系统调用 系统调用时 会堵塞M,所有该goroutine会被调度走 同步访问 atomic,mutex,chanal操作是goroutine堵塞. 工作窃取 当P2的本地队列没有G,优先从全局的G队列拿,如果还没有就会
-CSP Do not communicate by sharing memory; instead, share memory by communicating.
-CSP 全称是 “Communicating Sequential Processes”，这也是 Tony Hoare 在 1978 年发表在 ACM 的一篇论文。论文里指出一门编程语言应该重视 input 和 output 的原语，尤其是并发编程的代码。
-原则: 尽量使用 channel；把 goroutine 当作免费的资源，随便用。
-link CSP
-GC 两类GC
-追踪式GC 标记清楚: 标记整理: 解决内存碎片的问题 增量式: 将标记与清扫的过程分批执行，每次执行很小的部分，从而增量的推进垃圾回收，达到近似实时、几乎无停顿的目的 增量整理 分代 引用计数: 根据对象自己的引用计数俩回收,引用为0立即回收 不整理,并发的 三色标记清除算法</description>
+      <description>GMP M: machine,对应系统核心线程 P: processor, 绑定m和G G: gonrutine go协程&#xA;go scheduler 发生调度的时机&#xA;go 新建goroutine GC GC会新建一个goroutine 系统调用 系统调用时 会堵塞M,所有该goroutine会被调度走 同步访问 atomic,mutex,chanal操作是goroutine堵塞. 工作窃取 当P2的本地队列没有G,优先从全局的G队列拿,如果还没有就会&#xA;CSP Do not communicate by sharing memory; instead, share memory by communicating.&#xA;CSP 全称是 “Communicating Sequential Processes”，这也是 Tony Hoare 在 1978 年发表在 ACM 的一篇论文。论文里指出一门编程语言应该重视 input 和 output 的原语，尤其是并发编程的代码。&#xA;原则: 尽量使用 channel；把 goroutine 当作免费的资源，随便用。&#xA;link CSP&#xA;GC 两类GC&#xA;追踪式GC 标记清楚: 标记整理: 解决内存碎片的问题 增量式: 将标记与清扫的过程分批执行，每次执行很小的部分，从而增量的推进垃圾回收，达到近似实时、几乎无停顿的目的 增量整理 分代 引用计数: 根据对象自己的引用计数俩回收,引用为0立即回收 不整理,并发的 三色标记清除算法</description>
     </item>
     <item>
       <title>Python</title>
