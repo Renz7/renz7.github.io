@@ -6,8 +6,15 @@
     <description>Recent content on Ren777&#39;s blog.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Dec 2023 15:43:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2023 10:08:02 +0000</lastBuildDate>
     <atom:link href="https://renz7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023-12-12 ES ILM</title>
+      <link>https://renz7.github.io/post/20231212-es-ilm-z1idtm2.html</link>
+      <pubDate>Tue, 12 Dec 2023 10:08:02 +0000</pubDate>
+      <guid>https://renz7.github.io/post/20231212-es-ilm-z1idtm2.html</guid>
+      <description>2023-12-12 ES ILM Index Lifecycle Management 索引生命周期管理 (ILM) 是在 Elasticsearch 6.6（公测版）首次引入并在 6.7 版正式推出的一项功能。ILM 是 Elasticsearch 的一部分，主要用来管理索引 ​​ 标记节点属性</description>
+    </item>
     <item>
       <title>一些技巧</title>
       <link>https://renz7.github.io/post/some-techniques-z2v8dio.html</link>
@@ -28,6 +35,13 @@
       <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://renz7.github.io/post/2023-11-05/</guid>
       <description>Dockerfile 常用技巧</description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://renz7.github.io/post/python-z1hkamq.html</link>
+      <pubDate>Fri, 11 Aug 2023 15:27:42 +0000</pubDate>
+      <guid>https://renz7.github.io/post/python-z1hkamq.html</guid>
+      <description>Python 性能监控 line_profiler ​pip install line_profiler​ #!/usr/bin/env python # -*- coding: utf-8 -*- &amp;#34;&amp;#34;&amp;#34; :Time : 2023/8/11 15:16 :Author : ren &amp;#34;&amp;#34;&amp;#34; import sys import time from line_profiler import line_profiler profiler = line_profiler.LineProfiler() count = 1 @profiler def test(): global count for i in range(100): time.sleep(0.01) print(count) count += 1 print(&amp;#39;finns&amp;#39;)</description>
     </item>
     <item>
       <title>Go</title>

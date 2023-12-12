@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://renz7.github.io/css/light.css' />
     <link rel="stylesheet" href='https://renz7.github.io/css/dark.css' />
     <link rel="stylesheet" href='https://renz7.github.io/css/syntax.css' />
-    <title>go - Ren777&#39;s blog.</title>
+    <title>Posts - Ren777&#39;s blog.</title>
     
     <link rel="icon" type="image/x-icon" href='/images/avatar.png'>
     
@@ -22,11 +22,11 @@
 <meta name="keywords"
   content='blog, code man,python,golang' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://renz7.github.io/tags/go/" />
+<link rel="canonical" href="https://renz7.github.io/post/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="go - Ren777&#39;s blog." />
+<meta name="twitter:title" content="Posts - Ren777&#39;s blog." />
 <meta name="twitter:description"
   content="" />
 <meta name="twitter:site" content="https://renz7.github.io/" />
@@ -36,11 +36,11 @@
 
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="go - Ren777&#39;s blog.">
+<meta property="og:title" content="Posts - Ren777&#39;s blog.">
 <meta property="og:description"
   content="" />
-<meta property="og:url" content="https://renz7.github.io/tags/go/" />
-<meta property="og:site_name" content="go" />
+<meta property="og:url" content="https://renz7.github.io/post/" />
+<meta property="og:site_name" content="Posts" />
 <meta property="og:image"
   content="https://renz7.github.io/">
 <meta property="og:image:width" content="2048">
@@ -49,7 +49,7 @@
 
 
 
-<link href="/tags/go/index.xml" rel="alternate" type="application/rss+xml" title="Ren777&#39;s blog." />
+<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Ren777&#39;s blog." />
 
 
 
@@ -146,7 +146,7 @@
               </svg>
               Overview
             </a>
-            <a class="UnderlineNav-item " href="https://renz7.github.io//post/">
+            <a class="UnderlineNav-item  selected " href="https://renz7.github.io//post/">
               <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
                 version="1.1" width="16">
                 <path fill-rule="evenodd"
@@ -432,76 +432,53 @@
   <div class="position-relative">
     <div>
       
-      <div class="TableObject border-bottom border-gray-light py-3">
-        <div class="user-repo-search-results-summary TableObject-item TableObject-item--primary v-align-top">
-          <strong>1</strong>
-          results
-          for <strong>go</strong>
-        </div>
-        <div class="TableObject-item text-right v-align-top">
-          <a class="issues-reset-query text-normal d-inline-block ml-3" href="https://renz7.github.io//post/">
-            <svg class="octicon octicon-x issues-reset-query-icon mt-1" viewBox="0 0 16 16" version="1.1" width="16"
-              height="16">
-              <path fill-rule="evenodd"
-                d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
-              </path>
-            </svg>
-            Clear filter
-          </a>
-        </div>
-      </div>
-      
       <ul>
         
         <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
           <div class="col-12 d-inline-block">
             <div class="d-inline-block mb-1">
               <h3 class="wb-break-all">
-                <a href="https://renz7.github.io/post/go/go/">Go</a>
+                <a href="https://renz7.github.io/post/java/collections/">Collections</a>
               </h3>
             </div>
 
             <div>
               <div class="col-12 d-inline-block text-gray mb-2 pr-4">
-                GMP M: machine,对应系统核心线程 P: processor, 绑定m和G G: gonrutine go协程
-go scheduler 发生调度的时机
-go 新建goroutine GC GC会新建一个goroutine 系统调用 系统调用时 会堵塞M,所有该goroutine会被调度走 同步访问 atomic,mutex,chanal操作是goroutine堵塞. 工作窃取 当P2的本地队列没有G,优先从全局的G队列拿,如果还没有就会
-CSP Do not communicate by sharing memory; instead, share memory by communicating.
-CSP 全称是 “Communicating Sequential Processes”，这也是 Tony Hoare 在 1978 年发表在 ACM 的一篇论文。论文里指出一门编程语言应该重视 input 和 output 的原语，尤其是并发编程的代码。
-原则: 尽量使用 channel；把 goroutine 当作免费的资源，随便用。
-link CSP
-GC 两类GC
-追踪式GC 标记清楚: 标记整理: 解决内存碎片的问题 增量式: 将标记与清扫的过程分批执行，每次执行很小的部分，从而增量的推进垃圾回收，达到近似实时、几乎无停顿的目的 增量整理 分代 引用计数: 根据对象自己的引用计数俩回收,引用为0立即回收 不整理,并发的 三色标记清除算法
+                java collections ArrayList
+LinkedList
+Vector
+Map HashMap hash冲突解决方案: 拉链法,大于8之后进化为红黑树 LinkedHashMap TreeMap
+基于红黑树,对key进行排序 
               </div>
             </div>
 
             <div class="f6 text-gray mt-2">
               
               
-              <a class="muted-link mr-3" href="/tags/interview">
+              <a class="muted-link mr-3" href="/tags/java">
                 <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                   <path fill-rule="evenodd"
                     d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                   </path>
                 </svg>
-                interview
+                java
               </a>
               
-              <a class="muted-link mr-3" href="/tags/go">
+              <a class="muted-link mr-3" href="/tags/intetview">
                 <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                   <path fill-rule="evenodd"
                     d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                   </path>
                 </svg>
-                go
+                intetview
               </a>
               
               
 
               Created
-              <relative-time datetime=" Mon, 10 Apr 2023 18:00:53 &#43;0800" class="no-wrap"
-                title=" Mon, 10 Apr 2023 18:00:53 &#43;0800">
-                Mon, 10 Apr 2023 18:00:53 &#43;0800
+              <relative-time datetime=" Sun, 02 Apr 2023 14:40:46 &#43;0800" class="no-wrap"
+                title=" Sun, 02 Apr 2023 14:40:46 &#43;0800">
+                Sun, 02 Apr 2023 14:40:46 &#43;0800
               </relative-time>
             </div>
           </div>
@@ -511,7 +488,7 @@ GC 两类GC
       <div class="paginate-container">
         <div class="BtnGroup">
           
-          <button class="btn btn-outline BtnGroup-item" disabled="disabled">Previous</button>
+          <a rel="nofollow" class="btn btn-outline BtnGroup-item" href="/post/">Previous</a>
           
           
           <button class="btn btn-outline BtnGroup-item" disabled="disabled">Next</button>
