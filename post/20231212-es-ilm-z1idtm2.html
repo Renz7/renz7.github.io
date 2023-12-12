@@ -185,7 +185,7 @@
                 <article class="markdown-body entry-content container-lg"><h1 id="2023-12-12-es-ilm">2023-12-12 ES ILM</h1>
 <h1 id="index-lifecycle-management">Index Lifecycle Management</h1>
 <p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/7.0/index-lifecycle-management.html">索引生命周期管理 (ILM)</a> 是在 Elasticsearch 6.6（公测版）首次引入并在 6.7 版正式推出的一项功能。ILM 是 Elasticsearch 的一部分，主要用来管理索引</p>
-<p>​<img src="https://raw.githubusercontent.com/Renz7/page_content/pic/siyuan/pic/202312122218304.png?token=AEOPUFNHUULXO2YCU2WMDTDFPBV6M" alt="hot warm cold nodes">​</p>
+<p>​<img src="https://raw.githubusercontent.com/Renz7/imagehost/main/siyuan/pic/202312122302015.png" alt="hot warm cold nodes">​</p>
 <h3 id="标记节点属性">标记节点属性</h3>
 <p>首先标记哪些节点是热节点、温节点和（可选）冷节点。此操作可以通过启动参数或在 elasticsearch.yml 配置文件中完成</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">bin</span><span class="o">/</span><span class="n">elasticsearch</span> <span class="o">-</span><span class="n">Enode</span><span class="o">.</span><span class="n">attr</span><span class="o">.</span><span class="n">data</span><span class="o">=</span><span class="n">hot</span>

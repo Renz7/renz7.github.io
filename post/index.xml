@@ -37,6 +37,13 @@
       <description>Dockerfile 常用技巧</description>
     </item>
     <item>
+      <title>2023-09-29 ONLY_FULL_GROUP_BY</title>
+      <link>https://renz7.github.io/post/0929-zbudxj.html</link>
+      <pubDate>Fri, 29 Sep 2023 12:51:27 +0000</pubDate>
+      <guid>https://renz7.github.io/post/0929-zbudxj.html</guid>
+      <description>2023-09-29 ONLY_FULL_GROUP_BY ​ONLY_FULL_GROUP_BY​​ 错误解决 现象 使用官方的docker镜像跑本地测试环境是应用报错. MYSQL 版本 ​​ JAVA异常 ​ 原因 设</description>
+    </item>
+    <item>
       <title>Python</title>
       <link>https://renz7.github.io/post/python-z1hkamq.html</link>
       <pubDate>Fri, 11 Aug 2023 15:27:42 +0000</pubDate>
