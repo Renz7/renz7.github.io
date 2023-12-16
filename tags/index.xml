@@ -6,48 +6,13 @@
     <description>Recent content in Tags on Ren7&#39;s daily note.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Apr 2023 15:43:09 +0800</lastBuildDate>
     <atom:link href="https://renz7.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>docker</title>
-      <link>https://renz7.github.io/tags/docker/</link>
-      <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://renz7.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>go</title>
-      <link>https://renz7.github.io/tags/go/</link>
-      <pubDate>Mon, 10 Apr 2023 18:00:53 +0800</pubDate>
-      <guid>https://renz7.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>interview</title>
-      <link>https://renz7.github.io/tags/interview/</link>
-      <pubDate>Mon, 10 Apr 2023 18:00:53 +0800</pubDate>
-      <guid>https://renz7.github.io/tags/interview/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>python</title>
-      <link>https://renz7.github.io/tags/python/</link>
-      <pubDate>Mon, 10 Apr 2023 17:01:47 +0800</pubDate>
-      <guid>https://renz7.github.io/tags/python/</guid>
-      <description></description>
-    </item>
     <item>
       <title>intetview</title>
       <link>https://renz7.github.io/tags/intetview/</link>
-      <pubDate>Mon, 10 Apr 2023 16:29:33 +0800</pubDate>
+      <pubDate>Fri, 07 Apr 2023 15:43:09 +0800</pubDate>
       <guid>https://renz7.github.io/tags/intetview/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>java</title>
-      <link>https://renz7.github.io/tags/java/</link>
-      <pubDate>Sun, 02 Apr 2023 14:40:46 +0800</pubDate>
-      <guid>https://renz7.github.io/tags/java/</guid>
       <description></description>
     </item>
   </channel>
