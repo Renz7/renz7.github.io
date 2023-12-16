@@ -6,6 +6,7 @@ on:
       - main  # Set a branch to deploy
   schedule:
     - cron: '0 23 * * *'
+  workflow_dispatch:
   
 
 jobs:
