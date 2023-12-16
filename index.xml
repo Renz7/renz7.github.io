@@ -6,8 +6,15 @@
     <description>Recent content on Ren7&#39;s daily note.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Dec 2023 10:08:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Dec 2023 22:31:15 +0000</lastBuildDate>
     <atom:link href="https://renz7.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>runc 的一段代码</title>
+      <link>https://renz7.github.io/post/runc-s-code-ztbxy.html</link>
+      <pubDate>Sat, 16 Dec 2023 22:31:15 +0000</pubDate>
+      <guid>https://renz7.github.io/post/runc-s-code-ztbxy.html</guid>
+      <description>runc 的一段代码 github源码 // CreateCgroupPath creates cgroupv2 path, enabling all the supported controllers. func CreateCgroupPath(path string, c *configs.Cgroup) (Err error) { if !strings.HasPrefix(path, UnifiedMountpoint) { return fmt.Errorf(&amp;#34;invalid cgroup path %s&amp;#34;, path) } content, err := supportedControllers() if err != nil { return err } const ( cgTypeFile = &amp;#34;cgroup.type&amp;#34; cgStCtlFile = &amp;#34;cgroup.subtree_control&amp;#34; ) ctrs := strings.Fields(content) res := &amp;#34;+&amp;#34;</description>
+    </item>
     <item>
       <title>2023-12-12 ES ILM</title>
       <link>https://renz7.github.io/post/20231212-es-ilm-z1idtm2.html</link>

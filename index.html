@@ -155,7 +155,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">12</span>
+              <span class="Counter">13</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -422,7 +422,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">12</span>
+      <span class="Counter ">13</span>
     </a>
   </nav>
 </div>
@@ -486,6 +486,34 @@
           Popular posts
         </h2>
         <ol class="d-flex flex-wrap list-style-none gutter-condensed mb-4 js-pinned-items-reorder-list">
+          
+          <li class="col-12 col-md-6 col-lg-6 mb-3 d-flex flex-content-stretch">
+            <div
+              class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source reorderable sortable-button-item">
+              <div class="pinned-item-list-item-content">
+                <div class="d-flex width-full flex-items-center position-relative">
+                  <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 16 16" version="1.1"
+                    width="16" height="16">
+                    <path fill-rule="evenodd"
+                      d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                    </path>
+                  </svg>
+                  <a class="text-bold flex-auto min-width-0" href="https://renz7.github.io/post/runc-s-code-ztbxy.html">
+                    <span class="repo" title="runc 的一段代码">runc 的一段代码</span>
+                  </a>
+                </div>
+
+
+                <div name="summary" class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+                  runc 的一段代码 github源码 // CreateCgroupPath creates cgroupv2 path, enabling all the supported controllers. func CreateCgroupPath(path string, c *configs.Cgroup) (Err error) { if !strings.HasPrefix(path, UnifiedMountpoint) { return fmt.Errorf(&#34;invalid cgroup path %s&#34;, path) } content, err := supportedControllers() if err != nil { return err } const ( cgTypeFile = &#34;cgroup.type&#34; cgStCtlFile = &#34;cgroup.subtree_control&#34; ) ctrs := strings.Fields(content) res := &#34;+&#34;
+                </div>
+
+                <p class="mb-0 f6 text-gray">
+                  
+                </p>
+              </div>
+            </div>
+          </li>
           
           <li class="col-12 col-md-6 col-lg-6 mb-3 d-flex flex-content-stretch">
             <div
@@ -638,40 +666,18 @@
             </div>
           </li>
           
-          <li class="col-12 col-md-6 col-lg-6 mb-3 d-flex flex-content-stretch">
-            <div
-              class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source reorderable sortable-button-item">
-              <div class="pinned-item-list-item-content">
-                <div class="d-flex width-full flex-items-center position-relative">
-                  <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 16 16" version="1.1"
-                    width="16" height="16">
-                    <path fill-rule="evenodd"
-                      d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
-                    </path>
-                  </svg>
-                  <a class="text-bold flex-auto min-width-0" href="https://renz7.github.io/post/python-z1hkamq.html">
-                    <span class="repo" title="Python">Python</span>
-                  </a>
-                </div>
-
-
-                <div name="summary" class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
-                  Python 性能监控 line_profiler ​pip install line_profiler​ #!/usr/bin/env python # -*- coding: utf-8 -*- &#34;&#34;&#34; :Time : 2023/8/11 15:16 :Author : ren &#34;&#34;&#34; import sys import time from line_profiler import line_profiler profiler = line_profiler.LineProfiler() count = 1 @profiler def test(): global count for i in range(100): time.sleep(0.01) print(count) count += 1 print(&#39;finns&#39;)
-                </div>
-
-                <p class="mb-0 f6 text-gray">
-                  
-                </p>
-              </div>
-            </div>
-          </li>
-          
         </ol>
       </div>
     </div>
 
     
     <div class="mt-4 position-relative" id="contributions" data='[
+{
+  "title": "runc%20%e7%9a%84%e4%b8%80%e6%ae%b5%e4%bb%a3%e7%a0%81",
+  "link": "https://renz7.github.io/post/runc-s-code-ztbxy.html",
+  "publishDate": "2023-12-16%2022:31:15"
+},
+
 {
   "title": "2023-12-12%20ES%20ILM",
   "link": "https://renz7.github.io/post/20231212-es-ilm-z1idtm2.html",
