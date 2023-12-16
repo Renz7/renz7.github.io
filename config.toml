@@ -7,6 +7,7 @@ pygmentsUseClasses = true
 enableInlineShortcodes = true
 enableEmoji = true
 enableGitInfo = true
+enableGitalk = true
 
 [params]
   author = "Renz7"
@@ -18,6 +19,7 @@ enableGitInfo = true
   keywords = "blog,python,golang,java,k8s,backend"
   rss = false
   lastmod = true
+  userStatusEmoji = "😀"
   favicon = "/images/avatar.png"
   location = "Shenzhen,China"
 
@@ -25,6 +27,19 @@ enableGitInfo = true
     title = "Theme From"
     href = "https://github.com/meik2333"
     icon = "https://meik2333.com/images/avatar.png"
+
+  [params.gitalk]
+    clientID = "e82b43a7dc240d5cb4bb" 
+    clientSecret = "565d40b4ee93c33c90a8b6005a805777c693c3b2" 
+    repo = "Renz7.github.io"
+    owner = "renz7"
+    admin = "renz7"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 30
+    pagerDirection = "last"
+    createIssueManually = true
+    distractionFreeMode = false
 
 
 [frontmatter]
