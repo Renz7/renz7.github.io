@@ -4,6 +4,9 @@ title = "Ren7's daily note."
 theme = "github-style"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+enableInlineShortcodes = true
+enableEmoji = true
+enableGitInfo = true
 
 [params]
   author = "Renz7"
