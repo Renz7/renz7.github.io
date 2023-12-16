@@ -21,7 +21,7 @@ enableGitInfo = true
   lastmod = true
   enableGitalk = true
   userStatusEmoji = "😀"
-  favicon = "/images/avatar.png"
+  favicon = "https://avatars.githubusercontent.com/u/18676245"
   location = "Shenzhen,China"
 
   [[params.links]]
