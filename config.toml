@@ -4,14 +4,10 @@ title = "Ren7's daily note."
 theme = "github-style"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-enableInlineShortcodes = true
-enableEmoji = true
-enableGitInfo = true
-enableGitalk = true
 
 [params]
   author = "Renz7"
-  description = "Care will kill the cat."
+  description = "inner peace"
   github = "Renz7"
   stackoverflow="15373262"
   email = "Renz7@outlook.com"
