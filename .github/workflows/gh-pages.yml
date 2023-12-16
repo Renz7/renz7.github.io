@@ -25,6 +25,8 @@ jobs:
           repository: renz7/page_content
           token: ${{ secrets.GH_PAT }}
           ref: "main"
+      - name: tree
+        run: ls -R content/
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
