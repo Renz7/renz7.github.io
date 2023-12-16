@@ -21,6 +21,7 @@ enableGitInfo = true
   lastmod = true
   enableGitalk = true
   userStatusEmoji = "😀"
+  avatar = "https://avatars.githubusercontent.com/u/18676245"
   favicon = "https://avatars.githubusercontent.com/u/18676245"
   location = "Shenzhen,China"
 
