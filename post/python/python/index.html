@@ -150,9 +150,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sat, 16 Dec 2023 19:42:56 &#43;0000"
+                  Modified <relative-time datetime="Sat, 16 Dec 2023 19:56:20 &#43;0000"
                     class="no-wrap">
-                    Sat, 16 Dec 2023 19:42:56 &#43;0000</relative-time>
+                    Sat, 16 Dec 2023 19:56:20 &#43;0000</relative-time>
                   
                 </div>
               </div>
@@ -299,6 +299,24 @@ hash冲突解决方案:开放寻址</li>
 </div>
 <script type="application/javascript" src='https://renz7.github.io/js/toc.js'></script>
 <link rel="stylesheet" href='https://renz7.github.io/css/toc.css' />
+
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='https://renz7.github.io/css/gitalk.css'>
+<script src='https://renz7.github.io/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'e82b43a7dc240d5cb4bb',
+    clientSecret: '565d40b4ee93c33c90a8b6005a805777c693c3b2',
+    repo: 'Renz7.github.io',
+    owner: 'renz7',
+    admin: ['renz7'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
 
 
   <div class="footer container-xl width-full p-responsive">
