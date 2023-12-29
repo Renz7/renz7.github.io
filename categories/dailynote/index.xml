@@ -6,8 +6,15 @@
     <description>Recent content in dailynote on Ren7&#39;s daily note.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 12 Dec 2023 10:08:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2023 13:23:55 +0000</lastBuildDate>
     <atom:link href="https://renz7.github.io/categories/dailynote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>-12-29</title>
+      <link>https://renz7.github.io/post/1229-z158zmy.html</link>
+      <pubDate>Fri, 29 Dec 2023 13:23:55 +0000</pubDate>
+      <guid>https://renz7.github.io/post/1229-z158zmy.html</guid>
+      <description>2023-12-29 JAVA volatile​ 关键字的一些问题记录 从一个例子出发 /** * Application */ public class Application { public volatile int count; public void add() { count++; } public static void main(String[] args) { Application application = new Application(); for (int i = 0; i &amp;lt; 100; i++) { new Thread(application::add).start(); }</description>
+    </item>
     <item>
       <title>2023-12-12 ES ILM</title>
       <link>https://renz7.github.io/post/20231212-es-ilm-z1idtm2.html</link>

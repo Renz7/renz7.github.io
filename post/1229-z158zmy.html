@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://renz7.github.io/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://renz7.github.io/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://renz7.github.io/css/github.min.css' />
+    <link rel="stylesheet" href='https://renz7.github.io/css/github-style.css' />
+    <link rel="stylesheet" href='https://renz7.github.io/css/light.css' />
+    <link rel="stylesheet" href='https://renz7.github.io/css/dark.css' />
+    <link rel="stylesheet" href='https://renz7.github.io/css/syntax.css' />
+    <title>-12-29 - Ren7&#39;s daily note.</title>
+    
+    <link rel="icon" type="image/x-icon" href='https://avatars.githubusercontent.com/u/18676245'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="2023-12-29 JAVA volatile​ 关键字的一些问题记录 从一个例子出发 /** * Application */ public class Application { public volatile int count; public void add() { count&#43;&#43;; } public static void main(String[] args) { Application application = new Application(); for (int i = 0; i &amp;lt; 100; i&#43;&#43;) { new Thread(application::add).start(); }" />
+<meta name="keywords"
+  content='blog,python,golang,java,k8s,backend' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://renz7.github.io/post/1229-z158zmy.html" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="-12-29 - Ren7&#39;s daily note." />
+<meta name="twitter:description"
+  content="2023-12-29 JAVA volatile​ 关键字的一些问题记录 从一个例子出发 /** * Application */ public class Application { public volatile int count; public void add() { count&#43;&#43;; } public static void main(String[] args) { Application application = new Application(); for (int i = 0; i &amp;lt; 100; i&#43;&#43;) { new Thread(application::add).start(); }" />
+<meta name="twitter:site" content="https://renz7.github.io/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://renz7.github.io/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="-12-29 - Ren7&#39;s daily note.">
+<meta property="og:description"
+  content="2023-12-29 JAVA volatile​ 关键字的一些问题记录 从一个例子出发 /** * Application */ public class Application { public volatile int count; public void add() { count&#43;&#43;; } public static void main(String[] args) { Application application = new Application(); for (int i = 0; i &amp;lt; 100; i&#43;&#43;) { new Thread(application::add).start(); }" />
+<meta property="og:url" content="https://renz7.github.io/post/1229-z158zmy.html" />
+<meta property="og:site_name" content="-12-29" />
+<meta property="og:image"
+  content="https://renz7.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2023-12-29 13:23:55 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://renz7.github.io/">
+        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:https://renz7.github.io/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://renz7.github.io/">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+          width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+  
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://renz7.github.io/">
+                  <img class=" avatar-user"
+                    src="https://avatars.githubusercontent.com/u/18676245"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://renz7.github.io/">Renz7</a></span><span
+                    class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
+                      href="https://renz7.github.io/post/1229-z158zmy.html">-12-29</a></strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Fri, 29 Dec 2023 13:23:55 &#43;0000"
+                    class="no-wrap">
+                    Fri, 29 Dec 2023 13:23:55 &#43;0000</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Fri, 29 Dec 2023 16:19:08 &#43;0000"
+                    class="no-wrap">
+                    Fri, 29 Dec 2023 16:19:08 &#43;0000</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      1639 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><h1 id="2023-12-29">2023-12-29</h1>
+<h1 id="java-volatile-关键字的一些问题记录">JAVA <code>volatile</code>​ 关键字的一些问题记录</h1>
+<h2 id="从一个例子出发">从一个例子出发</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Application
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Application</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">volatile</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">add</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Application</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">100</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">new</span><span class="w"> </span><span class="n">Thread</span><span class="p">(</span><span class="n">application</span><span class="p">::</span><span class="n">add</span><span class="p">).</span><span class="na">start</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">application</span><span class="p">.</span><span class="na">count</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p><em>result：</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">[</span><span class="n">Running</span><span class="o">]</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="s">&#34;c:\Users\Renz_\github\demo\&#34; &amp;&amp; javac Application.java &amp;&amp; java Application
+</span></span></span><span class="line"><span class="cl"><span class="s">96
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">[Done] exited with code=0 in 1.181 seconds
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">[Running] cd &#34;</span><span class="n">c</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">Renz_</span><span class="err">\</span><span class="n">github</span><span class="err">\</span><span class="n">demo</span><span class="err">\</span><span class="s">&#34; &amp;&amp; javac Application.java &amp;&amp; java Application
+</span></span></span><span class="line"><span class="cl"><span class="s">99
+</span></span></span></code></pre></div><p>一句话概括： volatile保证了可见性和有序性，并不能保证原子性。</p>
+<h2 id="原因分析">原因分析</h2>
+<h3 id="jmmjava-memeory-model是个什么东西"><code>JMM(Java Memeory Model)</code>​是个什么东西</h3>
+<h4 id="计算机内存模型">计算机内存模型</h4>
+<h5 id="cpu和缓存一致性">CPU和缓存一致性</h5>
+<p>指令在cpu执行，指令执行所需要的数据保存在主存中，也就是物理内存中。为了解决内存读写速度和CPU执行速度差距过大的问题，引入了cpu高速缓存。随着cpu规格的不断提升，衍生出多级缓存，也就是常见的<code>L1 L2 L3 Cache</code>​。</p>
+<p>这时候cpu指令运行时读取数据的顺序就变成 <code>L1 -&gt; L2 -&gt; L3 OR Main Memeory</code>​.</p>
+<p>​<img src="https://raw.githubusercontent.com/Renz7/imagehost/main/assets/siyuan/pic/202312291619009.png" alt="image">​</p>
+<p>在CPU和内存之间加缓存，多线程场景下就有了缓存一致性的问题。也就是每个核心的缓存中数据存在一致性问题。</p>
+<h5 id="处理器优化-指令重排">处理器优化 指令重排</h5>
+<p>为了使处理器内部的运算单元能够尽量的被充分利用，处理器可能会对输入代码进行乱序执行处理， <!-- raw HTML omitted -->处理器优化<!-- raw HTML omitted --></p>
+<p>除了处理器会对指令做乱序处理之外，很多语言也会对指令进行<!-- raw HTML omitted -->指令重排<!-- raw HTML omitted -->优化。</p>
+<h5 id="并发编程的问题">并发编程的问题</h5>
+<p>对并发问题进行抽象之后，得出了并发编程的3个关键问题：</p>
+<ol>
+<li>原子性 简单理解一个操作在cpu中不可以中断，要么执行完成，要么不完成，没有中间结果。</li>
+<li>可见性 指多线程环境下，一个线程对变量的修改对其他线程是立即可见的。</li>
+<li>有序性 指程序执行顺序和代码顺序一致。</li>
+</ol>
+<p>对应起来就是 cpu缓存 -&gt; 可见性。 处理器优化-&gt; 原子性 指令重排 -&gt; 有序性</p>
+<h3 id="什么是java内存模型">什么是JAVA内存模型</h3>
+<p>为了解决上述的三个问题，保证共享内存的正确性，<!-- raw HTML omitted -->内存模型<!-- raw HTML omitted -->定义了共享内存系统中的多线程处理内存读写的规范。</p>
+<p>主要的解决方式包括两种：</p>
+<ol>
+<li>
+<p>限制处理器优化</p>
+</li>
+<li>
+<p><a href="https://zh.wikipedia.org/zh-cn/%E5%86%85%E5%AD%98%E5%B1%8F%E9%9A%9C">内存屏障</a></p>
+<p><!-- raw HTML omitted -->内存屏障<!-- raw HTML omitted -->（英语：Memory barrier），也称<!-- raw HTML omitted -->内存栅栏<!-- raw HTML omitted -->，<!-- raw HTML omitted -->内存栅障<!-- raw HTML omitted -->，<!-- raw HTML omitted -->屏障指令<!-- raw HTML omitted -->等，是一类<a href="https://zh.wikipedia.org/wiki/%E5%90%8C%E6%AD%A5%E5%B1%8F%E9%9A%9C" title="同步屏障">同步屏障</a>指令，它使得 CPU 或编译器在对内存进行操作的时候, 严格按照一定的顺序来执行, 也就是说在内存屏障之前的指令和之后的指令不会由于系统优化等原因而导致乱序。</p>
+<p>大多数现代计算机为了提高性能而采取<a href="https://zh.wikipedia.org/wiki/%E4%B9%B1%E5%BA%8F%E6%89%A7%E8%A1%8C" title="乱序执行">乱序执行</a>，这使得内存屏障成为必须。</p>
+<p>语义上，内存屏障之前的所有写操作都要写入内存；内存屏障之后的读操作都可以获得同步屏障之前的写操作的结果。因此，对于敏感的程序块，写操作之后、读操作之前可以插入内存屏障</p>
+</li>
+</ol>
+<p>JAVA内存模型</p>
+<p>java内存模型其实就是内存模型规范的一种实现。屏蔽了各种硬件和操作系统的访问差异的，保证了Java程序在各种平台下对内存的访问都能保证效果一致的机制及规范。<a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf">PDF</a></p>
+<p>JAVA 规定所有的变量都在主存中，每一个线程有自己的工作内存，工作内存是主存变量的拷贝，线程对变量的操作都在线程内存中操作，不能直接写主存。不同线程的工作内存是隔离的，变量传递需要在工作内存和主存之间通过数据同步进行。</p>
+<h4 id="jmm的实现">JMM的实现</h4>
+<p>JMM定义了规范，同时也提供了很多同步原语，对系统封装之后提供给使用者。比如并发相关的实现：<code>volatile</code>​ <code>synchronized</code>​ <code>final</code>​ <code>JUC包</code>​等。</p>
+<p>对应上述三个抽象问题：</p>
+<h5 id="原子性">原子性</h5>
+<p>java通过<code>monitors</code>​来解决同步问题。 java的每一个对象都关联了<code>monitor</code>​，线程可以通过操作<code>monitor</code>​来进行 <code>lock</code>​ <code>unlock</code>​操作。 java提供了2个字节码 <code>monitorenter</code>​ <code>monitorexit</code>​ 来保证原子性。其对应的关键字就是<code>synchronized</code>​。</p>
+<h5 id="可见性">可见性</h5>
+<p>java线程对变量的修改发生在工作内存，然后同步到主存。在读取时从主存中刷新变量值到工作内存中。</p>
+<p>​<code>volatile</code>​保证其修饰的变量在被修改后会立即同步到主存中，在每次读取的时候都是从主存中刷新。以此来保证可见性。</p>
+<p>初次之外 <code>synchronized</code>​ <code>final</code>​ 也能保证可见性。</p>
+<h5 id="有序性">有序性</h5>
+<p>可以通过 <code>volatile</code>​ <code>synchronized</code>​ 来保证有序性。具体实现机制不同。</p>
+<p>​<code>volatile</code>​通过禁止重排序来实现。</p>
+<p>​<code>synchronized</code>​ 通过保证单线程操作来保证有序性。</p>
+<p>‍</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://renz7.github.io/js/toc.js'></script>
+<link rel="stylesheet" href='https://renz7.github.io/css/toc.css' />
+
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='https://renz7.github.io/css/gitalk.css'>
+<script src='https://renz7.github.io/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'e82b43a7dc240d5cb4bb',
+    clientSecret: '565d40b4ee93c33c90a8b6005a805777c693c3b2',
+    repo: 'Renz7.github.io',
+    owner: 'renz7',
+    admin: ['renz7'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://renz7.github.io/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="https://renz7.github.io/js/github-style.js"></script>
+
+
+
+
+</html>
